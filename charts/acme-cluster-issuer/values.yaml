@@ -9,4 +9,8 @@ issuers:
 solvers:
   http01:
     enabled: true
-    ingress: {}
+    ingress:
+      name: ""
+      class: ""
+      serviceType: "NodePort"
+
