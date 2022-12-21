@@ -10,5 +10,7 @@ spec:
     privateKeySecretRef:
       name: {{ .Values.issuers.production.name }}
     solvers:
+      {{ if .Values.solvers.http01.enabled }}
       - http01:
-          ingress: {}
+          ingress: {{ .Values.solvers.http01.ingress }}
+      {{ end }}

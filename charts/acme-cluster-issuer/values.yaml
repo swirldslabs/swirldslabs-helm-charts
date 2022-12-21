@@ -5,3 +5,8 @@ issuers:
   production:
     name: letsencrypt-prod
     email: ""
+
+solvers:
+  http01:
+    enabled: true
+    ingress: {}
