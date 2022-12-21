@@ -3,6 +3,18 @@ entries:
   acme-cluster-issuer:
   - apiVersion: v2
     appVersion: 1.10.1
+    created: "2022-12-21T17:29:21.751252627Z"
+    description: 'Deploys a production/staging pair of ACME cert-manager cluster issuer
+      into a Kubernetes cluster. Cert-Manager must  already be installed and running
+      prior to this chart being installed. '
+    digest: b9961c8b7fb2610ef087353fa77b2471e16cc723995c7e5d1984b609fbd09101
+    name: acme-cluster-issuer
+    type: application
+    urls:
+    - https://github.com/swirldslabs/swirldslabs-helm-charts/releases/download/acme-cluster-issuer-0.2.0/acme-cluster-issuer-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v2
+    appVersion: 1.10.1
     created: "2022-12-21T06:35:43.34814661Z"
     description: 'Deploys a production/staging pair of ACME cert-manager cluster issuer
       into a Kubernetes cluster. Cert-Manager must  already be installed and running
@@ -13,4 +25,4 @@ entries:
     urls:
     - https://github.com/swirldslabs/helm-swirldslabs-internal-charts/releases/download/acme-cluster-issuer-0.1.0/acme-cluster-issuer-0.1.0.tgz
     version: 0.1.0
-generated: "2022-12-21T06:35:43.34816481Z"
+generated: "2022-12-21T17:29:21.751270927Z"
