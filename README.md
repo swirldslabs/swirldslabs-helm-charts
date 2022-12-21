@@ -1,1 +1,1 @@
-# helm-swirldslabs-internal-modules
+# Swirlds Labs Internal Helm Charts

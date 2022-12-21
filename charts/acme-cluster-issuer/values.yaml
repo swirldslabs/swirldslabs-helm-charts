@@ -1,0 +1,7 @@
+issuers:
+  staging:
+    name: letsencrypt-staging
+    email: ""
+  production:
+    name: letsencrypt-prod
+    email: ""
