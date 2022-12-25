@@ -11,7 +11,7 @@ permissions:
 jobs:
   publish:
     name: Publish Charts
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, Linux, medium, ephemeral]
     steps:
       - name: Checkout
         uses: actions/checkout@v3
