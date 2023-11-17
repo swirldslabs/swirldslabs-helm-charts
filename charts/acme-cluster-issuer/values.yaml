@@ -1,4 +1,5 @@
 issuers:
+  annotations:
   staging:
     name: letsencrypt-staging
     email: ""

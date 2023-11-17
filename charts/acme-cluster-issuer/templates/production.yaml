@@ -3,6 +3,10 @@ kind: ClusterIssuer
 metadata:
   name: {{ .Values.issuers.production.name }}
   namespace: cert-manager
+  {{- with .Values.issuers.annotations }}
+  annotations:
+    {{- toYaml . | nindent 4 }}
+  {{- end }}
 spec:
   acme:
     server: https://acme-v02.api.letsencrypt.org/directory

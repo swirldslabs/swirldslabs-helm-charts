@@ -3,6 +3,10 @@ kind: ClusterIssuer
 metadata:
   name: {{ .Values.issuers.staging.name }}
   namespace: cert-manager
+  {{- with .Values.issuers.annotations }}
+  annotations:
+    {{- toYaml . | nindent 4 }}
+  {{- end }}
 spec:
   acme:
     server: https://acme-staging-v02.api.letsencrypt.org/directory
