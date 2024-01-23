@@ -1,4 +1,9 @@
+global:
+  namespaceOverride: ""
+  ingressClassName: ""
+
 issuers:
+  annotations:
   staging:
     name: letsencrypt-staging
     email: ""
@@ -9,8 +14,11 @@ issuers:
 solvers:
   http01:
     enabled: true
+    solverType: "ingress" # "ingress" or "gatewayHTTPRoute"
     ingress:
       name: ""
       class: ""
       serviceType: "NodePort"
-
+    gatewayHTTPRoute:
+      name: ""
+      namespace: ""
